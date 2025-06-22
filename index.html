@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Луч</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header__container">
+    <a href="index.html">
+      <img src="imges/index/ЛОГО.png" alt="">
+    </a>
+    <nav>
+      <ul class="header__nav">
+        <li><a href="aboutUs.html">О нас</a></li>
+        <li><a href="order.html">Заказ</a></li>
+        <li><a href="service.html">Услуги</a></li>
+        <li><a href="calc.html">Калькулятор</a></li>
+        <li><a href="review.html">Отзывы</a></li>
+      </ul>
+    </nav>
+    <div class="header__phone">
+      <p>+7911-111-11-11</p>
+      |
+      <p>+7922-222-22-22</p>
+    </div>
+  </header>
+  <main>
+    <div class="main__container">
+      <img src="imges/index/car.png" alt="">
+      <div class="calc">
+        <h2 class="clac__h">Калькулятор доставки</h2>
+        <div class="calc__name__num">
+          <input class="calc__input" type="text" placeholder="Имя">
+          <input class="calc__input" type="text" placeholder="Телефон">
+        </div>
+        <input type="email" class="long__input" placeholder="Почта">
+        <div class="calc__name__num">
+          <input class="calc__input" type="text" placeholder="Общая площадь, м3">
+          <input class="calc__input" type="text" placeholder="Вес, кг">
+        </div>
+        <div class="calc__name__num">
+          <select class="custom-select">
+            <option value="" selected disabled>Откуда</option>
+            <option value="moscow">Москва</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="novosibirsk">Новосибирск</option>
+            <option value="ekaterinburg">Екатеринбург</option>
+            <option value="kazan">Казань</option>
+          </select>
+          <select class="custom-select">
+            <option value="" selected disabled>Куда</option>
+            <option value="moscow">Москва</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="novosibirsk">Новосибирск</option>
+            <option value="ekaterinburg">Екатеринбург</option>
+            <option value="kazan">Казань</option>
+          </select>
+        </div>
+        <button onclick="calculation()" class="btn__calc">Расчёт</button>
+        <div class="processing">
+          <p>Согласие на обработку персональных данных</p><input type="checkbox">
+        </div>
+      </div>
+      <a href="order.html"><button class="click__delivery">Заказать доставку</button></a>
+    </div>
+    <div class="service">
+      <h2 class="h">Наши услуги</h2>
+      <div class="service__container">
+        <div class="duo__service">
+          <div class="card">
+            <img class="service__img" src="imges/index/1.png" alt="">
+            <p class="border__bottom">Перевозка леса, труб</p>
+          </div>
+
+          <div class="card">
+            <img class="service__img" src="imges/index/2.png" alt="">
+            <p class="border__bottom">Перевозка обычного груза</p>
+          </div>
+        </div>
+
+        <div class="duo__service">
+          <div class="card">
+            <img class="service__img" src="imges/index/3.png" alt="">
+            <p class="border__bottom">Квартирный переезд</p>
+          </div>
+
+          <div class="card">
+            <img class="service__img" src="imges/index/4.png" alt="">
+            <p class="border__bottom">Дачный переезд</p>
+          </div>
+        </div>
+
+        <a href="service.html">
+          <button class="service__btn">Еще услуги</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="work">
+      <h2 class="h pad">Почему с нами удобно работать:</h2>
+      <div class="work__container">
+        <div class="work__card">
+          <img src="imges/work/van (1) 1.png" alt="">
+          <p>Собственный автопарк</p>
+          <p>В компании большой собственный автопарк.
+            Все автомобили проходят своевременный технический осмотр</p>
+        </div>
+
+        <div class="work__card">
+          <img src="imges/work/van (1) 1.png" alt="">
+          <p>Собственный автопарк</p>
+          <p>В компании большой собственный автопарк.
+            Все автомобили проходят своевременный технический осмотр</p>
+        </div>
+
+        <div class="work__card">
+          <img src="imges/work/van (1) 1.png" alt="">
+          <p>Собственный автопарк</p>
+          <p>В компании большой собственный автопарк.
+            Все автомобили проходят своевременный технический осмотр</p>
+        </div>
+
+        <div class="work__card">
+          <img src="imges/work/van (1) 1.png" alt="">
+          <p>Собственный автопарк</p>
+          <p>В компании большой собственный автопарк.
+            Все автомобили проходят своевременный технический осмотр</p>
+        </div>
+
+        <div class="work__card">
+          <img src="imges/work/van (1) 1.png" alt="">
+          <p>Собственный автопарк</p>
+          <p>В компании большой собственный автопарк.
+            Все автомобили проходят своевременный технический осмотр</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <h2 class="reviews__h">Отзывы</h2>
+      <div class="reviews__cards">
+        <div class="reviews__card">
+          <img class="quote" src="imges/div.png" alt="">
+          <p class="reviews__text">
+            Обращались в компанию "Луч" для доставки мебели из Москвы в Санкт-Петербург. Работа выполнена на отлично!
+            Водитель приехал точно в срок, аккуратно погрузил и доставил груз без единого повреждения. Все прошло быстро
+            и без лишних хлопот. Очень довольны качеством услуг и индивидуальным подходом к клиенту. Обязательно
+            обратимся еще раз и посоветуем друзьям!.</p>
+        </div>
+        <div class="reviews__card patno">
+          <img class="quote" src="imges/div.png" alt="">
+          <p class="reviews__text">
+            Несколько раз пользовались услугами компании "ЛУЧ" для перевозки строительных материалов по Вологодской
+            области. Всегда оперативная подача транспорта, грамотные водители, которые знают свое дело, и доступные
+            цены. Особенно порадовала возможность заказать услуги в удобное для меня время. Спасибо за надежное
+            сотрудничество!</p>
+        </div>
+      </div>
+      <button class="reviews__btn"><a href="review.html">Оставить отзыв</a></button>
+    </div>
+
+    <div class="feedback">
+      <div class="calc">
+        <h2 class="clac__h quest">Остались вопросы?</h2>
+        <div class="calc__name__num">
+          <input class="calc__input" type="text" placeholder="Имя">
+          <input class="calc__input" type="text" placeholder="Телефон">
+        </div>
+        <input type="email" class="long__input" placeholder="Почта">
+        <textarea class="textarea" placeholder="Сообщение..." name="" id=""></textarea>
+        <a href="index.html">
+          <button type="submit" class="btn__calc">Отправить</button>
+        </a>
+        <div class="processing">
+          <p>Согласие на обработку персональных данных</p><input type="checkbox">
+        </div>
+      </div>
+    </div>
+
+    <div class="guarantee">
+      <h2 class="reviews__h">Гарантия возврата денег</h2>
+      <div class="reasons">
+        <div class="reason">
+          <img class="reason__img" src="imges/Frame 17.png" alt="">
+          <h2 class="reason__h">Гарантия возврата</h2>
+          <p class="reason__text">В случае непредвиденных обстоятельств наша служба поддержки всегда выручит Вас</p>
+        </div>
+
+        <div class="reason">
+          <img class="reason__img" src="imges/Frame 25.png" alt="">
+          <h2 class="reason__h patno3">Безопасная сделка</h2>
+          <p class="reason__text">Средства переходят на счет исполнителя только после принятия Вами итоговой версии
+            работы</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__container">
+      <div class="footer__1">
+        <img class="footer__logo" src="imges/index/ЛОГО.png" alt="">
+        <p class="footer__h">+7922-222-22-22</p>
+        <p class="footer__h">+7911-111-11-11 nnnnn@ggg.com</p>
+        <p class="footer__h">Адрес: г.Вологда, ул.Гагарина 1</p>
+        <div class="footer__social">
+          <img class="footer__img" src="imges/social/vk.png" alt="">
+          <img class="footer__img" src="imges/social/tg.png" alt="">
+        </div>
+      </div>
+      <div class="footer__2">
+        <ul class="footer__nav">
+          <li><a class="footer__h" href="service.html">Услуги</a></li>
+          <li><a class="footer__h" href="review.html">Отзывы</a></li=>
+          <li><a class="footer__h" href="calc.html">Калькулятор</a></li>
+        </ul>
+      </div>
+      <div class="footer__3 footer__h">
+        Оформление заказа
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

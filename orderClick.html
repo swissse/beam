@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Луч</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header__container">
+    <a href="index.html">
+      <img src="imges/index/ЛОГО.png" alt="">
+    </a>
+    <nav>
+      <ul class="header__nav">
+        <li><a href="aboutUs.html">О нас</a></li>
+        <li><a href="order.html">Заказ</a></li>
+        <li><a href="service.html">Услуги</a></li>
+        <li><a href="calc.html">Калькулятор</a></li>
+        <li><a href="review.html">Отзывы</a></li>
+      </ul>
+    </nav>
+    <div class="header__phone">
+      <p>+7911-111-11-11</p>
+      |
+      <p>+7922-222-22-22</p>
+    </div>
+  </header>
+  <main>
+    <h2 class="reviews__h review__h">Оформление заказа</h2>
+    <div class="orderClick__section hr">
+      <div class="orderClick__text__input">
+        <p>Габариты груза</p>
+        <input class="calc__input margin__no" type="text">
+      </div>
+
+      <div class="orderClick__text__input">
+        <p>Вес груза</p>
+        <input class="calc__input margin__no" type="text">
+      </div>
+
+      <div class="orderClick__text__input">
+        <p>Объем груза</p>
+        <input class="calc__input margin__no" type="text">
+      </div>
+    </div>
+
+    <div class="orderClick__section hr">
+      <div class="orderClick__text__input">
+        <p>Характер груза</p>
+        <input class="calc__input margin__no" type="text">
+      </div>
+
+      <div class="orderClick__text__input">
+        <p>Объявленная стоимость</p>
+        <input class="calc__input margin__no" type="text">
+      </div>
+    </div>
+
+    <div class="orderClick__section hr">
+      <div class="orderClick__text__input">
+        <p>Откуда</p>
+      <select class="custom-select margin__no">
+          <option value="" selected disabled></option>
+          <option value="moscow">Москва</option>
+          <option value="spb">Санкт-Петербург</option>
+          <option value="novosibirsk">Новосибирск</option>
+          <option value="ekaterinburg">Екатеринбург</option>
+          <option value="kazan">Казань</option>
+        </select>
+      </div>
+      <div class="orderClick__text__input">
+        <p>Куда</p>
+      <select class="custom-select margin__no">
+          <option value="" selected disabled></option>
+          <option value="moscow">Москва</option>
+          <option value="spb">Санкт-Петербург</option>
+          <option value="novosibirsk">Новосибирск</option>
+          <option value="ekaterinburg">Екатеринбург</option>
+          <option value="kazan">Казань</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="orderClick__section">
+      <div class="orderClick__text__input">
+        <p>Когда</p>
+        <input class="calc__input margin__no" type="date">
+      </div>
+    </div>
+
+    <a href="orderClick.html">
+      <button type="submit" class="click__delivery center">Заказать доставку</button>
+    </a>
+
+
+    <div class="feedback__about">
+      <div class="calc">
+        <h2 class="clac__h ">Остались вопросы?</h2>
+        <div class="calc__name__num">
+          <input class="calc__input" type="text" placeholder="Имя">
+          <input class="calc__input" type="text" placeholder="Телефон">
+        </div>
+        <input type="email" class="long__input" placeholder="Почта">
+        <textarea class="textarea" placeholder="Сообщение..." name="" id=""></textarea>
+        <button type="submit" class="btn__calc"><a href="orderClick.html">Отправить</a></button>
+        <div class="processing">
+          <p>Согласие на обработку персональных данных</p><input type="checkbox">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__container">
+      <div class="footer__1">
+        <img class="footer__logo" src="imges/index/ЛОГО.png" alt="">
+        <p class="footer__h">+7922-222-22-22</p>
+        <p class="footer__h">+7911-111-11-11 nnnnn@ggg.com</p>
+        <p class="footer__h">Адрес: г.Вологда, ул.Гагарина 1</p>
+        <div class="footer__social">
+          <img class="footer__img" src="imges/social/vk.png" alt="">
+          <img class="footer__img" src="imges/social/tg.png" alt="">
+        </div>
+      </div>
+      <div class="footer__2">
+        <ul class="footer__nav">
+          <li><a class="footer__h" href="service.html">Услуги</a></li>
+          <li><a class="footer__h" href="review.html">Отзывы</a></li=>
+          <li><a class="footer__h" href="calc.html">Калькулятор</a></li>
+        </ul>
+      </div>
+      <div class="footer__3 footer__h">
+        Оформление заказа
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
